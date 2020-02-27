@@ -1,5 +1,8 @@
 using BracketApp.Api.Models;
 using BracketApp.Api.Repositories;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BracketApp.Api.Controllers
 {
