@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using BracketApp.Api.Repositories;
+using BracketApp.Api.Models.AppSettings;
 
 namespace BracketApp.Api
 {
