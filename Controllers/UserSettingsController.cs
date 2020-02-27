@@ -1,3 +1,4 @@
+using BracketApp.Api.Models.UserSettings;
 using BracketApp.Api.Models;
 using BracketApp.Api.Repositories;
 using System.Collections.Generic;
