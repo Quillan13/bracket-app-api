@@ -4,6 +4,7 @@ using BracketApp.Api.Repositories;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace BracketApp.Api.Controllers
 {
@@ -26,6 +27,17 @@ namespace BracketApp.Api.Controllers
 
             if (userSettings.OwnerId != GetUserId())
                 return Unauthorized();
+
+            return userSettings;
+        }
+
+        [HttpGet]
+        public ActionResult<UserSettings> Get()
+        {
+            UserSettings userSettings = userSettingsRepository.GetByOwnerId(GetUserId()).First();
+
+            if (userSettings == null)
+                return NotFound();
 
             return userSettings;
         }
