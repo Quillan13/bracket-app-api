@@ -2,6 +2,11 @@ namespace BracketApp.Api.Models.UserSettings
 {
     public class UserSettings : Document
     {
+        public UserSettings()
+        {
+            
+        }
+
         public UserSettings(CreateUserSettingsViewModel viewModel, string ownerId) : base(ownerId)
         {
             Primary = viewModel.Primary;
