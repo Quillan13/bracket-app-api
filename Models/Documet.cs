@@ -7,6 +7,10 @@ namespace BracketApp.Api.Models
 {
     public class Document
     {
+        public Document()
+        {
+            
+        }
         public Document(string ownerId)
         {
             OwnerId = ownerId;
