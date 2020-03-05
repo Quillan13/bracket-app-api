@@ -1,7 +1,5 @@
 using BracketApp.Api.Models.UserSettings;
-using BracketApp.Api.Models;
 using BracketApp.Api.Repositories;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
