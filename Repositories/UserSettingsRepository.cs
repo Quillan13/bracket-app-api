@@ -1,6 +1,5 @@
 using BracketApp.Api.Models.AppSettings;
 using BracketApp.Api.Models.UserSettings;
-using BracketApp.Api.Controllers;
 
 namespace BracketApp.Api.Repositories
 {
