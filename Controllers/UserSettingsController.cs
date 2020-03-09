@@ -15,24 +15,24 @@ namespace BracketApp.Api.Controllers
 
         public UserSettingsController(UserSettingsRepository userSettingsRepository) => this.userSettingsRepository = userSettingsRepository;
 
-        [HttpGet("{id:length(24)}")]
-        public ActionResult<UserSettings> GetById(string id)
-        {
-            UserSettings userSettings = userSettingsRepository.Get(id);
+        //[HttpGet("{id:length(24)}")]
+        //public ActionResult<UserSettings> GetById(string id)
+        //{
+        //    UserSettings userSettings = userSettingsRepository.Get(id);
 
-            if (userSettings == null)
-                return NotFound();
+        //    if (userSettings == null)
+        //        return NotFound();
 
-            if (userSettings.OwnerId != GetUserId())
-                return Unauthorized();
+        //    if (userSettings.OwnerId != GetUserId())
+        //        return Unauthorized();
 
-            return userSettings;
-        }
+        //    return userSettings;
+        //}
 
         [HttpGet]
         public ActionResult<UserSettings> Get()
         {
-            UserSettings userSettings = userSettingsRepository.GetByOwnerId(GetUserId()).First();
+            UserSettings userSettings = userSettingsRepository.GetByOwnerId(GetUserId()).FirstOrDefault();
 
             if (userSettings == null)
                 return NotFound();
