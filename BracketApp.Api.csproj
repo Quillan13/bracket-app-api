@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <UserSecretsId>aspnet-BracketApp.Api-72073C75-9870-4356-9742-10DDD160FC8E</UserSecretsId>
   </PropertyGroup>
 
